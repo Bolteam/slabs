@@ -1,0 +1,73 @@
+{% assign slab_no = "2" %}
+{% assign slab_type = "content" %}
+{% capture slab_name %}{{ slab_type }}-{{ slab_no }}{% endcapture %}
+<!-- START {{slab_type}} {{slab_no}} -->
+<!-- Trigger docs modal -->
+<button class="read-docs" data-toggle="modal" data-target="#{{ slab_name }}">
+  ?
+</button>
+<section class="{{ slab_name }} bkg-clouds">
+  <div class="container">
+    <h1 class="text-center">
+      Why Slabs is amazing?
+    </h1>
+
+    <div class="row info-wrapper">
+      <div class="col-sm-4  text-center">
+        <img class="" src="{{ site.baseurl }}/assets/img/ic_simple_fast.png">
+        <h3>Simple and Fast</h3>
+        <p class='lead'>
+          Take what you need and nothing more
+        </p>
+      </div>
+      <div class="col-sm-4  text-center">
+        <img class="" src="{{ site.baseurl }}/assets/img/ic_code.png">
+        <h3>Open Source</h3>
+        <p class='lead'>
+          Code licensed under MIT License
+        </p>
+      </div>
+      <div class="col-sm-4  text-center">
+        <img class="" src="{{ site.baseurl }}/assets/img/ic_responsive.png">
+        <h3>Responsive</h3>
+        <p class='lead'>
+          Design for desktop, tablets and phones
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Modal -->
+<div class="modal modal-wide fade modal-docs" id="{{ slab_name }}" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title text-upcase">{{slab_name}}</h4>
+      </div>
+      <div class="modal-body">
+        <h2>
+          HTML:
+        </h2>
+        <p class="lead">
+          Simply copy and paste the following lines of code into yout HTML file
+        </p>
+        {% highlight html %} {% include {{ slab_name | prepend: 'components/contents/' | append: '.html'}}  %} {% endhighlight %}
+        <h2>Customize this block:</h2>
+        <p class="lead">You can customize the background color and text color.</p>
+          {% highlight html %}
+<section class="{{ slab_name }} bkg-turquoise text-white">
+...
+</section>
+          {% endhighlight %}
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- END CONTENT {{slab_no}}  -->
+{% assign slab_no = null %}
+{% assign slab_type = null %}
+{% assign slab_name = null %}
+<div class="docs-spacer"> </div>

@@ -1,0 +1,19 @@
+////////////////////////
+// SWEET HACKS
+////////////////////////
+
+.vcenter {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+  margin-right:-4px;
+}
+
+.vertical-center{
+  display: table;
+  width:100%;
+  & > div {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}

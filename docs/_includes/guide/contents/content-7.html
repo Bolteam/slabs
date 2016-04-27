@@ -1,0 +1,82 @@
+{% assign slab_no = "7" %}
+{% assign slab_type = "content" %}
+{% capture slab_name %}{{ slab_type }}-{{ slab_no }}{% endcapture %}
+<!-- START {{slab_type}} {{slab_no}} -->
+<!-- Trigger docs modal -->
+<button class="read-docs" data-toggle="modal" data-target="#{{ slab_name }}">
+  ?
+</button>
+
+<section class="{{ slab_name }}">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>
+          Steps to getting started
+        </h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <ul class="progress-steps step-4">
+          <li class="on" >
+            Download
+          </li>
+          <li>
+            Install
+          </li>
+          <li>
+            Customize
+          </li>
+          <li>
+            Enjoy!
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Modal -->
+<div class="modal modal-wide fade modal-docs" id="{{ slab_name }}" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title text-upcase">{{slab_name}}</h4>
+      </div>
+      <div class="modal-body">
+        <h2>
+          HTML:
+        </h2>
+        <p class="lead">
+          Simply copy and paste the following lines of code into yout HTML file
+        </p>
+        {% highlight html %} {% include {{ slab_name | prepend: 'components/contents/' | append: '.html'}}  %} {% endhighlight %}
+        <h2>Customize this block:</h2>
+        <p class="lead">It support from 3 to 5 steps. To change the grid of the steps just add the class step-#{number-steps} and should match with the amount of steps.</p>
+          {% highlight html %}
+<ul class="progress-steps step-3">
+  <li>
+    Step 1
+  </li>
+  <li class="on">
+    Step 2
+  </li>
+  <li>
+    Step 3
+  </li>
+</ul>
+          {% endhighlight %}
+          <p class="lead">Add the class "on" to the step that should be mark as active.</p>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- END {{slab_type}} {{slab_no}} -->
+{% assign slab_no = null %}
+{% assign slab_type = null %}
+{% assign slab_name = null %}
+<div class="docs-spacer"> </div>

@@ -1,0 +1,45 @@
+<header class="navbar navbar-inverse navbar-static-top" id="docs-nav" role="banner">
+
+  <div class="main-nav">
+    <div class="container">
+      <div class="navbar-header">
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="../" class="navbar-brand">
+          <img src="{{ site.baseurl }}/assets/brand/slabs-logo-white.png" class='img-responsive'>
+        </a>
+      </div>
+      <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+        <ul class="nav navbar-nav">
+          <li{% if page.slug == "starting" %} class="active"{% endif %}>
+            <a href="{{ site.baseurl }}/getting-started">Getting started</a>
+          </li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li{% if page.slug == "css" %} class="active"{% endif %}>
+            <a href="{{ site.baseurl }}/css">CSS</a>
+          </li>
+          <li{% if page.slug == "headers" %} class="active"{% endif %}>
+            <a href="{{ site.baseurl }}/headers">Headers</a>
+          </li>
+          <li{% if page.slug == "contents" %} class="active"{% endif %}>
+            <a href="{{ site.baseurl }}/contents">Contents</a>
+          </li>
+          <li{% if page.slug == "footers" %} class="active"{% endif %}>
+            <a href="{{ site.baseurl }}/footers">Footers</a>
+          </li>
+          <li{% if page.slug == "people" %} class="active"{% endif %}>
+            <a href="{{ site.baseurl }}/people">People</a>
+          </li>
+        </ul>
+
+      </nav>
+    </div>
+  </div>
+
+</header>

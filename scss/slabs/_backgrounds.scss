@@ -1,0 +1,5 @@
+@each $color in $colorList{
+  .bkg-#{nth($color,1)} {
+    background-color: nth($color,2);
+  }
+}

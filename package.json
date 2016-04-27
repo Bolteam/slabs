@@ -1,0 +1,46 @@
+{
+  "name": "slabs",
+  "description": "Amazing bootstrap extension.",
+  "version": "1.0.0",
+    "keywords": [
+    "slabs",
+    "css",
+    "boltech",
+    "mobile-first",
+    "responsive",
+    "front-end",
+    "framework",
+    "web"
+  ],
+  "homepage": "https://github.com/Boltech/slabs",
+  "author": "Boltech",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Boltech/slabs"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.4",
+    "matchdep": "^0.3.0",
+    "grunt-contrib-clean": "~1.0.0",
+    "grunt-contrib-compress": "~1.2.0",
+    "grunt-contrib-concat": "~1.0.0",
+    "grunt-contrib-copy": "~1.0.0",
+    "grunt-contrib-sass": "^0.7.3",
+    "grunt-contrib-cssmin": "~1.0.0",
+    "grunt-contrib-coffee": "~1.0.0",
+    "grunt-contrib-uglify": "~1.0.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-jekyll": "~0.4.4"
+  },
+  "bugs": {
+    "url": "https://github.com/Boltech/slabs/issues"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ]
+}

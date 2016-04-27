@@ -1,0 +1,63 @@
+{% assign slab_no = "9" %}
+{% assign slab_type = "content" %}
+{% capture slab_name %}{{ slab_type }}-{{ slab_no }}{% endcapture %}
+<!-- START {{slab_type}} {{slab_no}} -->
+<!-- Trigger docs modal -->
+<button class="read-docs" data-toggle="modal" data-target="#{{ slab_name }}">
+  ?
+</button>
+
+<section class="{{ slab_name }} bkg-black vertical-center" id="docs-content-9">
+  <div class="container">
+    <div class="jumbotron">
+      <h1>PLAY YOUTUBE OR VIMEO</h1>
+      <p>
+        Click on the button to watch the video
+      </p>
+      <p>
+        <a data-toggle="lightbox" data-width="800" id="play-video" href="https://www.youtube.com/watch?v=yNENVZFHutQ"><img src="{{ site.baseurl }}/dist/img/btn-play.png" alt="Play youtube or vimeo video">
+        </a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Modal -->
+<div class="modal modal-wide fade modal-docs" id="{{ slab_name }}" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title text-upcase">{{slab_name}}</h4>
+      </div>
+      <div class="modal-body">
+        <h2>
+          HTML:
+        </h2>
+        <p class="lead">
+          Simply copy and paste the following lines of code into yout HTML file
+        </p>
+        {% highlight html %} {% include {{ slab_name | prepend: 'components/contents/' | append: '.html'}}  %} {% endhighlight %}
+        <h2>Customize this block:</h2>
+        <p class="lead">You can add your youtube or vimeo video like this</p>
+        {% highlight html %}
+<a data-toggle="lightbox" data-width="800" id="play-video" href="ADD_HERE_YOUR_VIMEO_OR_YOUTUBE_URL">
+  ...
+</a>
+        {% endhighlight %}
+
+        <p class="lead">You can edit the video width in data-width</p>
+        {% highlight html %}
+<a data-toggle="lightbox" data-width="400" id="play-video" href="https://vimeo.com/8747975">
+  ...
+</a>
+        {% endhighlight %}
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END {{slab_type}} {{slab_no}} -->
+{% assign slab_no = null %}
+{% assign slab_type = null %}
+{% assign slab_name = null %}
+<div class="docs-spacer"> </div>

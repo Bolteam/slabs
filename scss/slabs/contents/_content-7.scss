@@ -1,0 +1,71 @@
+/* CONTENT */
+.content-7{
+
+  $steps-size: 30px;
+  $steps-line-size: 2px;
+
+  padding: 20px 10px 20px;
+  h1,h2,h3{
+    text-align: center;
+    color: #B0BABF;
+    line-height: 1.1;
+    margin-left: -2px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  .progress-steps {
+    margin-bottom: 35px;
+    overflow: hidden;
+    counter-reset: step;
+    text-align: center;
+    float: left;
+    padding: 0px;
+    width: 100%;
+    li{
+      list-style-type: none;
+      font-size: 13px;
+      float: left;
+      position: relative;
+    }
+    li:after {
+      content: '';
+      width: 100%;
+      height: $steps-line-size;
+      background: #f3f5f5;
+      position: absolute;
+      left: -50%;
+      top: ($steps-size / 2) - $steps-line-size;
+      z-index: -1; /*put it behind the numbers*/
+    }
+    li.on:before, .progress-steps li.on:after {
+    background: #8BC5EB;
+    color: #FFF;
+    font-weight: bold;
+    }
+    li:before {
+      content: counter(step);
+      counter-increment: step;
+      width: $steps-size;
+      line-height: $steps-size;
+      display: block;
+      font-size: 12px;
+      background: #F3F5F5;
+      border-radius: 50%;
+      margin: 0 auto 5px auto;
+    }
+    li:first-child:after {
+    content: none;
+    }
+
+    @each $step-columns in (3,4,5){
+      $unit: (100%  / $step-columns);
+      &.step-#{$step-columns}{
+        li{width: $unit}
+      }
+    }
+
+
+  }
+
+
+}

@@ -1,0 +1,134 @@
+/* HEADER NAVBAR */
+$header-no: 2;
+
+.header-#{$header-no}{
+
+  position: relative;;
+
+  margin-bottom: 0px;
+
+  .item{
+
+    $block-height: 130px;
+
+    padding-top: $block-height;
+    padding-bottom: $block-height;
+    height: 610px;
+    background: 50% 50% no-repeat;
+    color: $white;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: 50% 50%;
+
+    background: radial-gradient(circle at 60% 30%, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7));
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: 50%;
+    display: table;
+
+    .jumbotron{
+      margin: 0px;
+      padding-top: 90px;
+      padding-bottom: 90px;
+      vertical-align: middle;
+      background-color: transparent;
+
+      h1{
+        font-weight: 300;
+        @include media-breakpoint-up(md) {
+          font-size: 3.5em;
+        }
+        @include media-breakpoint-down(md) {
+          font-size: 3.0em;
+        }
+        @include media-breakpoint-down(sm) {
+          font-size: 2.6em;
+        }
+      }
+      p {
+        font-family: $font-family-sans-serif;
+        font-weight: 300;
+        font-size: 24px;
+
+        @include media-breakpoint-up(md) {
+          font-size: 2.0em;
+        }
+        @include media-breakpoint-down(md) {
+          font-size: 1.6em;
+        }
+        @include media-breakpoint-down(sm) {
+          font-size: 1.4em;
+        }
+      }
+
+      @include media-breakpoint-down(sm) {
+        text-align:center;
+      }
+    }
+
+
+    @include media-breakpoint-down(md) {
+      height: 500px;
+    }
+    @include media-breakpoint-down(xs) {
+      height: 400px;
+      padding: 20px;
+    }
+  }
+
+  .slick-dots{
+    bottom: 20px;
+    li{
+      width: 8px;
+      .slick-active {
+        button:before{
+          opacity: 1.0;
+        }
+      }
+      & button:before{
+        color: #FFFFFF;
+        font-size: 25px;
+        opacity: .5;
+      }
+    }
+  }
+
+
+  .slick-dots li.slick-active button:before {
+    color: #FFFFFF;
+    opacity: 1.0;
+  }
+
+  .slick_next, .slick_prev{
+    z-index: 9999;
+    font-size: 45px;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    padding: 0;
+    cursor: pointer;
+    color: #FFFFFF;
+    border: none;
+    outline: none;
+
+    @include media-breakpoint-down(md) {
+      display: none !important;
+    }
+
+  }
+  .slick_next{
+    right: 25px;
+  }
+
+  .slick_prev{
+    left: 25px;
+  }
+
+}

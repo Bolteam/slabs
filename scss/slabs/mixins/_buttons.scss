@@ -1,0 +1,28 @@
+/////////////////
+// BUTTONS GENERATOR
+////////////////
+
+@mixin generate-btn($colorsList) {
+  @each $color in $colorList {
+    .btn.btn-#{nth($color,1)} {
+      color: #FFFFFF;
+      background-color: nth($color,2);
+      border-color: nth($color,2);
+      &:hover{
+        color: #FFFFFF;
+        background-color: darken( nth($color,2), 10% );
+      }
+    }
+    .btn.btn-outline.btn-#{nth($color,1)}{
+        color: nth($color,2);
+      &:hover{
+        @if nth($color,1) != 'white'{
+          color: #FFFFFF;
+        } @else {
+          color: #333333;
+        }
+        background-color: nth($color,2);
+      }
+    }
+  }
+}

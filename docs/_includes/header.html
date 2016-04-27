@@ -1,0 +1,56 @@
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Slabs, a Bootstrap extension to build your next website with ease.">
+<meta name="keywords" content="HTML, CSS, JS, JavaScript, framework, slabs, bootstrap extension, front-end, frontend, web development">
+<meta name="author" content="Jorge Najera">
+
+<title>
+  {% if page.title == "Slabs" %}
+    {{ page.title }}
+  {% else %}
+    {{ page.title }} &middot; Slabs
+  {% endif %}
+</title>
+
+<!-- Bootstrap core CSS -->
+<link href="{{ site.baseurl }}/assets/css/bootstrap.min.css" rel="stylesheet">
+<!-- Slabs CSS -->
+<link href="{{ site.baseurl }}/dist/css/slabs.min.css" rel="stylesheet">
+<!-- Documentation extras -->
+<link href="{{ site.baseurl }}/assets/css/docs.css" rel="stylesheet">
+<!-- JQUERY-->
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
+<script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
+<!-- Bootstrap core JS -->
+<script src="{{ site.baseurl }}/assets/js/bootstrap.min.js"></script>
+<!-- Slabs JS -->
+<script src="{{ site.baseurl }}/dist/js/slabs.min.js"></script>
+<!-- Font Awesemoe CSS -->
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/font-awesome.min.css">
+{% if jekyll.environment != "production" %}
+  <!-- Livereload -->
+  <script src="http://localhost:1337/livereload.js"></script>
+{% endif %}
+
+<!--[if lt IE 9]><script src="../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<!-- Favicons -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.baseurl }}/assets/brand/apple-icon-144x144.png">
+  <link rel="icon" href="{{ site.baseurl }}/assets/brand/favicon.ico">
+<script>
+  // var _gaq = _gaq || [];
+  // _gaq.push(['_setAccount', 'UA-146052-10']);
+  // _gaq.push(['_trackPageview']);
+  // (function() {
+  //   var ga = document.createElement('script'); ga.async = true;
+  //   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  //   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  // })();
+</script>

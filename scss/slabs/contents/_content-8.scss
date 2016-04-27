@@ -1,0 +1,22 @@
+/* CONTENT */
+.content-8 {
+  $block-height: 45px;
+  padding-top: $block-height;
+  padding-bottom: $block-height;
+
+  p{
+    line-height: 1.6em;
+  }
+
+  @include media-breakpoint-up(md) {
+    p { font-size: 2.0em; }
+  }
+
+  @include media-breakpoint-down(md) {
+    p  { font-size: 1.8em; }
+  }
+
+  @include media-breakpoint-down(sm) {
+    p  { font-size: 1.6em; }
+  }
+}

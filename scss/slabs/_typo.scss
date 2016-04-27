@@ -1,0 +1,27 @@
+////////////////////////
+// TYPOGRAPHY
+////////////////////////
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: $headings-font-family;
+  font-weight: $headings-font-weight;
+}
+
+////////////////////////
+// OTHERS
+////////////////////////
+
+@each $color in $colorList{
+  .text-#{nth($color,1)} {
+    color: nth($color,2);
+  }
+}
+
+.text-upcase{
+  text-transform:uppercase;
+}
+
+.text-downcase{
+  text-transform:lowercase;
+}

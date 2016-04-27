@@ -1,0 +1,56 @@
+{% assign slab_no = "13" %}
+{% assign slab_type = "content" %}
+{% capture slab_name %}{{ slab_type }}-{{ slab_no }}{% endcapture %}
+<!-- START {{slab_type}} {{slab_no}} -->
+<!-- Trigger docs modal -->
+<button class="read-docs" data-toggle="modal" data-target="#{{ slab_name }}">
+  ?
+</button>
+<section class="{{ slab_name }} bkg-clouds">
+  <div class="container">
+      <h2 class="text-center">Show me some logos</h2>
+      <ul class="showcase-logos">
+        <li><img class="img-responsive img-center" src="http://placehold.it/250/333333/ffffff?text=Logo 1"></li>
+        <li><img class="img-responsive img-center" src="http://placehold.it/250/e74c3c/ffffff?text=Logo 2"></li>
+        <li><img class="img-responsive img-center" src="http://placehold.it/250/333333/ffffff?text=Logo 3"></li>
+        <li><img class="img-responsive img-center" src="http://placehold.it/250/8e44ad/ffffff?text=Logo 4"></li>
+        <li><img class="img-responsive img-center" src="http://placehold.it/250/f39c12/ffffff?text=Logo 5"></li>
+        <li><img class="img-responsive img-center" src="http://placehold.it/250/333333/ffffff?text=Logo 6"></li>
+        <li><img class="img-responsive img-center" src="http://placehold.it/250/2ecc71/ffffff?text=Logo 7"></li>
+        <li><img class="img-responsive img-center" src="http://placehold.it/250/333333/ffffff?text=Logo 8"></li>
+      </ul>
+  </div>
+</section>
+
+<!-- Modal -->
+<div class="modal modal-wide fade modal-docs" id="{{ slab_name }}" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title text-upcase">{{slab_name}}</h4>
+      </div>
+      <div class="modal-body">
+        <h2>
+          HTML:
+        </h2>
+        <p class="lead">
+          Simply copy and paste the following lines of code into yout HTML file
+        </p>
+        {% highlight html %} {% include {{ slab_name | prepend: 'components/contents/' | append: '.html'}}  %} {% endhighlight %}
+        <h2>Customize this block:</h2>
+        <p class="lead">You can customize the background color and text color.</p>
+          {% highlight html %}
+<section class="{{ slab_name }} bkg-turquoise text-white">
+...
+</section>
+          {% endhighlight %}
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END {{slab_type}} {{slab_no}} -->
+{% assign slab_no = null %}
+{% assign slab_type = null %}
+{% assign slab_name = null %}
+<div class="docs-spacer"> </div>

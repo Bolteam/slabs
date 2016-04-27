@@ -1,0 +1,72 @@
+{% assign slab_no = "12" %}
+{% assign slab_type = "content" %}
+{% capture slab_name %}{{ slab_type }}-{{ slab_no }}{% endcapture %}
+<!-- START {{slab_type}} {{slab_no}} -->
+<!-- Trigger docs modal -->
+<button class="read-docs" data-toggle="modal" data-target="#{{slab_name}}">
+  ?
+</button>
+<section class="{{slab_name}} ">
+  <div  class="container">
+    <div class="row">
+      <div class="col-sm-4 sidebar ">
+        <div class="background" style="background-image: url('{{ site.baseurl }}/assets/img/bg_105.jpg');">
+
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <!-- You can insert content here -->
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-8">
+        <h1 class="text-alizarin">Design and Code</h1>
+        <p class="lead">
+          Slabs is made on basis of Twitter Boostrap so you can use all its power to customize your website.
+        <h3 class="text-carrot"> Mobile ready </h3>
+        </p>
+        <p class="lead">
+          All our blocks of header, contents and footers are ready for mobile divises. Resize the window to discover!
+        </p>
+        <h3 class="text-carrot"> Rock your website </h3>
+        </p>
+        <p class="lead">
+          Share your support and let us know what you have done with Slabs.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Modal -->
+<div class="modal modal-wide fade modal-docs" id="{{slab_name}}" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">{{slab_name | upcase }}</h4>
+      </div>
+      <div class="modal-body">
+        <h2>
+          HTML:
+        </h2>
+        <p class="lead">
+          Simply copy and paste the following lines of code into yout HTML file
+        </p>
+        {% highlight html %} {% include {{ slab_name | prepend: 'components/contents/' | append: '.html'}}  %} {% endhighlight %}
+        <h2>Customize this block:</h2>
+<p>
+  This block have a special place to add a background image. We recommend to add it by CSS rules for this particular element.
+</p>
+{% highlight html %}
+<div class='background' style='background-image: url("../img/bg_1.jpg");'></div>
+{% endhighlight %}
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END {{slab_type}} {{slab_no}} -->
+{% assign slab_no = null %}
+{% assign slab_type = null %}
+{% assign slab_name = null %}
+<div class="docs-spacer"> </div>

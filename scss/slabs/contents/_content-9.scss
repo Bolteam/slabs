@@ -1,0 +1,46 @@
+/* CONTENT */
+.content-9{
+
+  $block-height: 130px;
+  position:relative;
+
+  height: 500px;
+  width: 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+
+  color: $white;
+
+  .jumbotron{
+    margin-bottom: 0px;
+    text-align: center;
+
+      h1{
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+    background-color: transparent;
+
+    @include media-breakpoint-up(md) {
+      h1 { font-size: 3.5em; }
+      p  { font-size: 2.0em; }
+    }
+
+    @include media-breakpoint-down(md) {
+      h1 { font-size: 3.0em; }
+      p  { font-size: 1.6em; }
+    }
+
+    @include media-breakpoint-down(sm) {
+      padding: 0px;
+      h1 { font-size: 2.6em; }
+      p  { font-size: 1.4em; }
+    }
+
+  }
+
+  @include media-breakpoint-down(sm) {
+    height: 550px;
+  }
+}

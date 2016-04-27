@@ -1,0 +1,18 @@
+/* CONTENT */
+.content-10{
+  padding: 20px;
+  .media{
+    text-align: center;
+    img{max-width: 100%;}
+    iframe{
+      max-width: 100%;
+      border:5px solid #000;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px !important;
+    }
+  }
+  .row{
+    text-align: center;
+  }
+}

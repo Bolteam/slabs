@@ -1,0 +1,450 @@
+#slabs-landing #welcome-to-slabs {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+#slabs-landing #welcome-to-slabs p {
+  margin-bottom: 25px;
+}
+
+#docs-nav {
+  margin-bottom: 0px;
+}
+#docs-nav .navbar-brand {
+  padding: 10px 15px;
+}
+#docs-nav .navbar-brand img {
+  height: 30px;
+}
+
+#docs-subheader-1 .background {
+  background-image: url("../img/bg_1.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#docs-items-header-2 .item {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#docs-content-9 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/bg_106.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.highlight {
+  background: #111111;
+  color: #ffffff;
+  padding: 0.2em 0.9em;
+  margin-bottom: 1em;
+  font: normal normal normal 115% / normal "Monaco", "Courier New", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", monospace !important;
+  line-height: 1.1em;
+  overflow: auto;
+  font-size: 1.0em;
+  border: 1px solid #CCC;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  border-radius: 7px;
+}
+.highlight .hll {
+  background-color: #333333;
+}
+
+p > code {
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  color: #C5CBD0;
+  /*color: white*/
+  background-image: url(/images/opaque_20.png);
+  font-family: Menlo, Consolas, "Courier New", Courier, "Liberation Mono", monospace;
+  font-size: 1.1em;
+  /*height: 0px;
+  image-rendering: auto;
+  left: auto;
+  list-style-type: disc;*/
+  padding-bottom: 2px;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-top: 2px;
+  text-decoration: none;
+  text-indent: 0px;
+  text-shadow: none;
+  text-transform: none;
+  top: auto;
+}
+p > a > code {
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  color: #C5CBD0;
+  /*color: white*/
+  background-image: url(/images/opaque_20.png);
+  font-family: Menlo, Consolas, "Courier New", Courier, "Liberation Mono", monospace;
+  font-size: 1.1em;
+  /*height: 0px;
+  image-rendering: auto;
+  left: auto;
+  list-style-type: disc;*/
+  padding-bottom: 2px;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-top: 2px;
+  text-decoration: none;
+  text-indent: 0px;
+  text-shadow: none;
+  text-transform: none;
+  top: auto;
+  color: #95be7d;
+}
+
+code, pre {
+  font-family: "Consolas", "Courier New", "Courier", "FreeMono", monospace;
+  font-size: 12px;
+  margin: 1em 0 1.5em 0;
+  background-color: #111;
+  border-color: #111;
+  color: #f8f8f2;
+}
+
+.highlight span {
+  font-family: "Consolas", "Courier New", "Courier", "FreeMono", monospace;
+  font-size: 14px;
+}
+
+.highlight {
+  /*background: #272822;*/
+  color: #f8f8f2;
+}
+.highlight .hll {
+  background-color: #49483e;
+}
+.highlight .c {
+  /* Comment */
+  color: #75715e;
+}
+.highlight .err {
+  /* Error */
+  color: #960050;
+  background-color: #1e0010;
+}
+.highlight .k {
+  /* Keyword */
+  color: #66d9ef;
+}
+.highlight .l {
+  /* Literal */
+  color: #ae81ff;
+}
+.highlight .n {
+  /* Name */
+  color: #f8f8f2;
+}
+.highlight .o {
+  /* Operator */
+  color: #f92672;
+}
+.highlight .p {
+  /* Punctuation */
+  color: #f8f8f2;
+}
+.highlight .cm {
+  /* Comment.Multiline */
+  color: #75715e;
+}
+.highlight .cp {
+  /* Comment.Preproc */
+  color: #75715e;
+}
+.highlight .c1 {
+  /* Comment.Single */
+  color: #75715e;
+}
+.highlight .cs {
+  /* Comment.Special */
+  color: #75715e;
+}
+.highlight .ge {
+  /* Generic.Emph */
+  font-style: italic;
+}
+.highlight .gs {
+  /* Generic.Strong */
+  font-weight: bold;
+}
+.highlight .kc {
+  /* Keyword.Constant */
+  color: #66d9ef;
+}
+.highlight .kd {
+  /* Keyword.Declaration */
+  color: #66d9ef;
+}
+.highlight .kn {
+  /* Keyword.Namespace */
+  color: #f92672;
+}
+.highlight .kp {
+  /* Keyword.Pseudo */
+  color: #66d9ef;
+}
+.highlight .kr {
+  /* Keyword.Reserved */
+  color: #66d9ef;
+}
+.highlight .kt {
+  /* Keyword.Type */
+  color: #66d9ef;
+}
+.highlight .ld {
+  /* Literal.Date */
+  color: #e6db74;
+}
+.highlight .m {
+  /* Literal.Number */
+  color: #ae81ff;
+}
+.highlight .s {
+  /* Literal.String */
+  color: #e6db74;
+}
+.highlight .na {
+  /* Name.Attribute */
+  color: #a6e22e;
+}
+.highlight .nb {
+  /* Name.Builtin */
+  color: #f8f8f2;
+}
+.highlight .nc {
+  /* Name.Class */
+  color: #a6e22e;
+}
+.highlight .no {
+  /* Name.Constant */
+  color: #66d9ef;
+}
+.highlight .nd {
+  /* Name.Decorator */
+  color: #a6e22e;
+}
+.highlight .ni {
+  /* Name.Entity */
+  color: #f8f8f2;
+}
+.highlight .ne {
+  /* Name.Exception */
+  color: #a6e22e;
+}
+.highlight .nf {
+  /* Name.Function */
+  color: #a6e22e;
+}
+.highlight .nl {
+  /* Name.Label */
+  color: #f8f8f2;
+}
+.highlight .nn {
+  /* Name.Namespace */
+  color: #f8f8f2;
+}
+.highlight .nx {
+  /* Name.Other */
+  color: #a6e22e;
+}
+.highlight .py {
+  /* Name.Property */
+  color: #f8f8f2;
+}
+.highlight .nt {
+  /* Name.Tag */
+  color: #f92672;
+}
+.highlight .nv {
+  /* Name.Variable */
+  color: #f8f8f2;
+}
+.highlight .ow {
+  /* Operator.Word */
+  color: #f92672;
+}
+.highlight .w {
+  /* Text.Whitespace */
+  color: #f8f8f2;
+}
+.highlight .mf {
+  /* Literal.Number.Float */
+  color: #ae81ff;
+}
+.highlight .mh {
+  /* Literal.Number.Hex */
+  color: #ae81ff;
+}
+.highlight .mi {
+  /* Literal.Number.Integer */
+  color: #ae81ff;
+}
+.highlight .mo {
+  /* Literal.Number.Oct */
+  color: #ae81ff;
+}
+.highlight .sb {
+  /* Literal.String.Backtick */
+  color: #e6db74;
+}
+.highlight .sc {
+  /* Literal.String.Char */
+  color: #e6db74;
+}
+.highlight .sd {
+  /* Literal.String.Doc */
+  color: #e6db74;
+}
+.highlight .s2 {
+  /* Literal.String.Double */
+  color: #e6db74;
+}
+.highlight .se {
+  /* Literal.String.Escape */
+  color: #ae81ff;
+}
+.highlight .sh {
+  /* Literal.String.Heredoc */
+  color: #e6db74;
+}
+.highlight .si {
+  /* Literal.String.Interpol */
+  color: #e6db74;
+}
+.highlight .sx {
+  /* Literal.String.Other */
+  color: #e6db74;
+}
+.highlight .sr {
+  /* Literal.String.Regex */
+  color: #e6db74;
+}
+.highlight .s1 {
+  /* Literal.String.Single */
+  color: #e6db74;
+}
+.highlight .ss {
+  /* Literal.String.Symbol */
+  color: #e6db74;
+}
+.highlight .bp {
+  /* Name.Builtin.Pseudo */
+  color: #f8f8f2;
+}
+.highlight .vc {
+  /* Name.Variable.Class */
+  color: #f8f8f2;
+}
+.highlight .vg {
+  /* Name.Variable.Global */
+  color: #f8f8f2;
+}
+.highlight .vi {
+  /* Name.Variable.Instance */
+  color: #f8f8f2;
+}
+.highlight .il {
+  /* Literal.Number.Integer.Long */
+  color: #ae81ff;
+}
+
+.read-docs {
+  background-color: #333333;
+  font-size: 1.6em;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  border: 3px solid #DDD;
+  width: 50px;
+  height: 50px;
+  float: right;
+  margin-right: 10px;
+  position: absolute;
+  margin-top: 20px;
+  z-index: 969;
+  color: #FFFFFF;
+  right: 10px;
+}
+
+.docs-spacer {
+  padding: 15px;
+}
+
+.modal.modal-wide .modal-dialog {
+  width: 90%;
+}
+
+.modal-wide .modal-body {
+  overflow-y: auto;
+}
+
+.modal-docs h1, .modal-docs h2 {
+  font-family: "Roboto","Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.modal-docs p {
+  font-family: "Roboto","Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #7F8C8D;
+}
+.modal-docs .highlight {
+  max-height: 400px;
+  overflow: scroll;
+}
+
+.well .highlight {
+  margin-bottom: 0px;
+}
+
+.bolt-guide-starting p {
+  font-family: "Roboto","Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #7F8C8D;
+}
+.bolt-guide-starting hr {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.bolts-typo-examples tr:first-child td {
+  border-top: 0;
+}
+
+.bolts-buttons-examples button {
+  margin-bottom: 5px;
+}
+
+.bolts-swatches-examples .color-swatches {
+  overflow: hidden;
+}
+.bolts-swatches-examples .color-swatches .color-swatch {
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 3px;
+  float: left;
+  margin: 0 5px 5px 0;
+  color: #FFFFFF;
+}
+
+#slabs-landing .bkg-none {
+  background-color: #FFFFFF;
+}
+
+/*# sourceMappingURL=docs.css.map */

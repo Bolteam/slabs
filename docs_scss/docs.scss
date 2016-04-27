@@ -1,0 +1,64 @@
+////////////////////////
+// DOCS STYLES
+////////////////////////
+
+// GUIDE EXAMPLES
+@import "landing";
+@import "headers";
+@import "contents";
+
+// MISC
+@import "highlight";
+@import "misc";
+
+.well{
+  .highlight{
+    margin-bottom: 0px;
+  }
+}
+
+.bolt-guide-starting{
+  p{
+    font-family: "Roboto","Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #7F8C8D;
+  }
+  hr{
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+.bolts-typo-examples{
+  tr:first-child td {
+    border-top: 0;
+  }
+}
+
+.bolts-buttons-examples{
+  button{
+    margin-bottom: 5px;
+  }
+}
+
+.bolts-swatches-examples{
+  .color-swatches{
+    overflow: hidden;
+    .color-swatch{
+      text-align: center;
+      width: 100px;
+      height: 100px;
+      border-radius: 3px;
+      float: left;
+      margin: 0 5px 5px 0;
+      color: #FFFFFF;
+    }
+  }
+}
+
+#slabs-landing{
+  .bkg-none{
+    background-color: #FFFFFF;
+  }
+}

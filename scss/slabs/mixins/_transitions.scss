@@ -1,0 +1,128 @@
+////////////////////////
+// ANIMATIONS IN CC3
+////////////////////////
+
+// Basics
+// linear | ease | ease-in | ease-out | ease-in-out
+@mixin animation-timing-function ($animation) {
+  -webkit-animation-timing-function: $animation;
+  -moz-animation-timing-function: $animation;
+  -o-animation-timing-function: $animation;
+  -ms-animation-timing-function: $animation;
+  animation-timing-function: $animation;
+}
+// name
+@mixin animation-name ($animation-name) {
+  -webkit-animation-name: $animation-name;
+  -moz-animation-name: $animation-name;
+  -o-animation-name: $animation-name;
+  -ms-animation-name: $animation-name;
+  animation-name: $animation-name;
+}
+// 1 | 2 | .. | infinite
+@mixin animation-iterations ($iterations: 1) {
+  -webkit-animation-iteration-count: $iterations;
+  -moz-animation-iteration-count: $iterations;
+  -o-animation-iteration-count: $iterations;
+  -ms-animation-iteration-count: $iterations;
+  animation-iteration-count: $iterations;
+}
+
+// none | forwards | backwards | both
+@mixin animation-fill-mode ($mode) {
+  -webkit-animation-fill-mode: $mode;
+  -moz-animation-fill-mode: $mode;
+  -o-animation-fill-mode: $mode;
+  -ms-animation-fill-mode: $mode;
+  animation-fill-mode: $mode;
+}
+// seconds
+@mixin animation-duration ($animation-duration) {
+  -webkit-animation-duration: $animation-duration;
+  -moz-animation-duration: $animation-duration;
+  -o-animation-duration: $animation-duration;
+  -ms-animation-duration: $animation-duration;
+  animation-duration: $animation-duration;
+}
+
+//////////////////
+// FADE IN
+//////////////////
+@-webkit-keyframes fade-in { from { opacity:0; } to { opacity:1;} }
+@-moz-keyframes  fade-in { from { opacity:0; } to { opacity:1; } }
+@keyframes fade-in { from { opacity:0; } to { opacity:1; } }
+
+@mixin fade-in ($animation-duration, $animation: ease-in, $mode: forwards) {
+  opacity:0;
+  @include animation-name(fade-in);
+  @include animation-timing-function($animation);
+  @include animation-iterations;
+  @include animation-fill-mode($mode);
+  @include animation-duration($animation-duration);
+}
+
+////////////////////
+// BOUNCE IN
+////////////////////
+@-webkit-keyframes bounce-in {
+  0%    { -webkit-transform: scale(.3); opacity: 0; }
+  40%   { -webkit-transform: scale(1); opacity: 1; }
+  60%   { -webkit-transform: scale(.95);}
+  100%  { -webkit-transform: scale(1); }
+}
+
+@-moz-keyframes bounce-in {
+  0%    { -moz-transform: scale(.3); opacity: 0; }
+  40%   { -moz-transform: scale(1); opacity: 1; }
+  60%   { -moz-transform: scale(.95);}
+  100%  { -moz-transform: scale(1); }
+}
+
+@-ms-keyframes bounce-in {
+  0%    { -ms-transform: scale(.3); opacity: 0; }
+  40%   { -ms-transform: scale(1); opacity: 1; }
+  60%   { -ms-transform: scale(.95);}
+  100%  { -ms-transform: scale(1); }
+}
+
+@-o-keyframes bounce-in {
+  0%    { -o-transform: scale(.3); opacity: 0; }
+  40%   { -o-transform: scale(1); opacity: 1; }
+  60%   { -o-transform: scale(.95); }
+  100%  { -o-transform: scale(1); }
+}
+
+@keyframes bounce-in {
+  0%    { transform: scale(.3); opacity: 0; }
+  40%   { transform: scale(1); opacity: 1; }
+  60%   { transform: scale(.95); }
+  100%  { transform: scale(1); }
+}
+
+@mixin bounce-in ($animation-duration, $animation: linear) {
+  @include animation-name(bounce-in);
+  @include animation-duration($animation-duration);
+}
+
+
+////////////////////////
+// TRANSITIONS IN CC3
+////////////////////////
+@mixin transition-duration ($duration) {
+  -webkit-transition-duration: $duration;
+  -moz-transition-duration: $duration;
+  -o-transition-duration: $duration;
+  -ms-transition-duration: $duration;
+  transition-duration: $duration;
+}
+
+////////////////////////
+// TRANFROM IN CC3
+////////////////////////
+@mixin transform ($x,$y) {
+  -webkit-transform: translate($x,$y);
+  -moz-transform: translate($x,$y);
+  -o-transform: translate($x,$y);
+  -ms-transform: translate($x,$y);
+  transform: translate($x,$y);
+}

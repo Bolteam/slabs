@@ -1,0 +1,21 @@
+# Permalinks
+permalink: pretty
+
+# Server config
+source:  docs
+destination:  _gh_pages
+host: 0.0.0.0
+port: 9001
+url: http://localhost:9001
+encoding: UTF-8
+
+gems:
+  - jekyll-sitemap
+
+# Custom vars
+current_version: 1.0.0
+repo: https://github.com/Boltech/slabs
+
+download:
+  source:  https://github.com/Boltech/slabs/archive/v1.0.0.zip
+  dist:    https://github.com/Boltech/slabs/releases/download/v1.0.0/slabs-1.0.0-dist.zip

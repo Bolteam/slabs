@@ -1,0 +1,47 @@
+.read-docs{
+  background-color: #333333;
+  font-size: 1.6em;
+ -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  border: 3px solid #DDD;
+  width: 50px;
+  height: 50px;
+  float:right;
+  margin-right: 10px;
+  position: absolute;
+  margin-top: 20px;
+  z-index: 969;
+  color: #FFFFFF;
+  right: 10px;
+}
+
+.docs-spacer{
+  padding: 15px;
+}
+
+.modal.modal-wide .modal-dialog {
+  width: 90%;
+}
+.modal-wide .modal-body {
+  overflow-y: auto;
+}
+
+.modal-docs{
+  h1, h2{
+    font-family: "Roboto","Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  p{
+    font-family: "Roboto","Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #7F8C8D;
+  }
+  .highlight{
+    max-height: 400px;
+    overflow:scroll;
+  }
+}

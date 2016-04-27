@@ -1,0 +1,42 @@
+/* CONTENT */
+.content-12{
+
+  position:relative;
+  height: 450px;
+
+  .background{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $silver;
+    background-position: right;
+    background-repeat: no-repeat;
+    width: 1000px;
+  }
+  .sidebar{
+    height: 100%;
+    @include media-breakpoint-down(sm) {
+      min-height: 180px;
+    }
+    @include media-breakpoint-down(md) {
+      min-height: 180px;
+    }
+  }
+
+  .container{
+    height: 100%;
+
+    & > .row{
+      height: 100%;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    height: auto !important;
+  }
+  @include media-breakpoint-down(md) {
+    height: auto !important;
+  }
+
+}

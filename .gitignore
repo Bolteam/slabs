@@ -1,0 +1,13 @@
+# Ignore docs files
+_gh_pages
+_site
+.ruby-version
+*.zip
+
+# Folders to ignore
+node_modules
+bower_components
+**/.sass-cache
+**/.sass-cache/
+deploy
+design

@@ -1,0 +1,27 @@
+/* CONTENT */
+.content-5{
+  $block-height: 45px;
+  padding-top: $block-height;
+  padding-bottom: $block-height;
+
+  p{
+    margin-top: 35px;
+    margin-bottom: 15px;
+    line-height: 1.6em;
+  }
+
+  @include media-breakpoint-up(md) {
+    h3 { font-size: 2.6em; }
+    p  { font-size: 1.3em; }
+  }
+
+  @include media-breakpoint-down(md) {
+    h3 { font-size: 2.2em; }
+    p  { font-size: 1.2em; }
+  }
+
+  @include media-breakpoint-down(sm) {
+    h3 { font-size: 1.8em; }
+    p  { font-size: 1.1em; }
+  }
+}

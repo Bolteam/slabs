@@ -1,0 +1,116 @@
+{% assign section_name = "people-1" %}
+<!-- START PEOPLE 1 -->
+<!-- Trigger docs modal -->
+<button class="read-docs" data-toggle="modal" data-target="#{{section_name}}">
+  ?
+</button>
+<section class="{{section_name}}">
+  <div class="container">
+    <div class='header text-center'>
+      <h1>Boltech Team</h1>
+      <p class='text-asbesto'>We believe in create amazing products</p>
+    </div>
+    <div class="row small">
+      <div class="col-md-4">
+        <div class="person">
+          <div class="picture">
+            <img src= "{{ site.baseurl }}/assets/img/j_najera.jpg" />
+          </div>
+          <div class="information">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt ornare lectus, at consequat purus malesuada in.</p>
+            <div class="name">Jorge Najera</div>
+            <div class="divider"></div>
+            <p class="small">
+              <em>Co-founder &amp; Developer</em>
+            </p>
+            <p class="small">
+              <a href="#">
+                <i class="fa fa-twitter fa-2x"></i><strong>@Jorge_Najera</strong>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="person">
+          <div class="picture">
+            <img src= "{{ site.baseurl }}/assets/img/e_garcia.jpg" />
+          </div>
+          <div class="information">
+            <p>Sed a eleifend mi. Aliquam varius non neque non bibendum. Pellentesque accumsan aliquam augue vitae semper. </p>
+            <div class="name">Erick Garcia</div>
+            <div class="divider"></div>
+            <p class="small">
+              <em>Co-founder &amp; Developer</em>
+            </p>
+            <p class="small">
+              <a href="#">
+                <i class="fa fa-twitter fa-2x"></i><strong>@Erick_GarciaE</strong>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="person">
+          <div class="picture">
+            <img src= "{{ site.baseurl }}/assets/img/r_kuri.jpg" />
+          </div>
+          <div class="information">
+            <p>Morbi semper dui felis, vehicula auctor lorem malesuada eu. In erat neque, gravida ac dictum vel, molestie eget diam. </p>
+            <div class="name">Ramon Kuri</div>
+            <div class="divider"></div>
+            <p class="small">
+              <em>Product Designer</em>
+            </p>
+            <p class="small">
+              <a href="#">
+                <i class="fa fa-twitter fa-2x"></i><strong>@r_kuri</strong>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Modal -->
+<div class="modal modal-wide fade modal-docs" id="{{section_name}}" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title text-upcase">{{section_name}}</h4>
+      </div>
+      <div class="modal-body">
+        <h2>
+          HTML:
+        </h2>
+        <p>
+          Simply copy and paste the following lines of code into yout HTML file
+        </p>
+        {% highlight html %} {% include {{ section_name | prepend: 'components/people/' | append: '.html'}}  %} {% endhighlight %}
+        <h2>Customize this block:</h2>
+        <p>Remember to mantain the same HTML Structure so the design don't break.</p>
+        <p>Adding your images it's super simple, just insert it between this class:</p>
+        {% highlight html %}
+<div class="picture">
+  ...
+</div>
+        {% endhighlight %}
+        <p>You can add any information of the person inside this class:</p>
+        {% highlight html %}
+<div class="information">
+  ...
+</div>
+        {% endhighlight %}
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- END CONTENT 10 -->
+{% assign content_name = null %}
+<div class="docs-spacer"> </div>

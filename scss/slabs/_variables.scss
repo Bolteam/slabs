@@ -1,0 +1,114 @@
+////////////////////////
+// Colors
+////////////////////////
+
+// Basic colors
+$white: #FFFFFF;
+$black: #333333;
+$dark: #2a2a2a;
+$green: #65c31f;
+$red: #c7254e;
+$yellow: #ffc821;
+
+$blue: #428bca;
+$blue-magic: #1FA3F4;
+$blue-dark: #4679BD;
+
+$gray-ultra-lighter: #f9f9f9;;
+$gray-lighter: #F6F6F6;
+$gray-light: #E4E4E4;
+$gray: #CCCCCC;
+$gray-lm: #999999;
+$gray-med: #606060;
+$gray-dark: #323232;
+
+// Flat UI colors
+$turquoise: #1ABC9C;
+$green-sea: #16A085;
+$emerald: #2ECC71;
+$nephritis: #27AE60;
+$peter-river: #3498DB;
+$belize-hole: #2980B9;
+$amethyst: #9B59B6;
+$wisteria: #8E44AD;
+$wet-asphalt: #34495E;
+$midnight-blue: #2C3E50;
+$sun-flower: #F1C40F;
+$orange: #F39C12;
+$carrot: #E67E22;
+$pumpkin: #D35400;
+$alizarin: #E74C3C;
+$pomegranate: #C0392B;
+$clouds: #ECF0F1;
+$silver: #BDC3C7;
+$concrete: #95A5A6;
+$asbestos:  #7F8C8D;
+
+// Social colors
+$fb-color: #3b5998;
+$twitter-color: #55acee;
+$gplus-color: #d34836;
+$linkedin-color: #0073B1;
+
+// List of colors
+$colorList:(
+  "white" $white,
+  "black" $black,
+  "dark" $dark,
+  "turquoise" $turquoise,
+  "green-sea" $green-sea,
+  "emerald" $emerald,
+  "nephritis" $nephritis,
+  "peter-river" $peter-river,
+  "belize-hole" $belize-hole,
+  "amethyst"  $amethyst,
+  "wisteria"  $wisteria,
+  "wet-asphalt" $wet-asphalt,
+  "midnight-blue" $midnight-blue,
+  "sun-flower"  $sun-flower,
+  "orange"  $orange,
+  "carrot"  $carrot,
+  "pumpkin" $pumpkin,
+  "alizarin"  $alizarin,
+  "pomegranate" $pomegranate,
+  "clouds"  $clouds,
+  "silver"  $silver,
+  "concrete"  $concrete,
+  "asbestos" $asbestos
+);
+
+$socialColorList:(
+  "facbeook" $fb-color,
+  "twitter" $twitter-color,
+  "google-plux" $gplus-color,
+  "linkedin" $linkedin-color
+);
+
+
+////////////////////////
+// Grid breakpoints
+////////////////////////
+// Define the minimum and maximum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+$grid-breakpoints: (
+  // Extra small screen / phone
+  xs: 0,
+  // Small screen / phone
+  sm: 480px,
+  // Medium screen / tablet
+  md: 767px,
+  // Large screen / desktop
+  lg: 991px,
+  // Extra large screen / wide desktop
+  xl: 1200px
+) !default;
+
+////////////////////////
+// TYPOGRAPHY
+////////////////////////
+
+$font-family-sans-serif:  "Roboto","Helvetica Neue", Helvetica, Arial, sans-serif;
+
+$headings-font-family: $font-family-sans-serif;
+$headings-font-weight: 500;

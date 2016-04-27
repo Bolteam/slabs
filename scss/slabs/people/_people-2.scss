@@ -1,0 +1,51 @@
+/* PEOPLE */
+.people-2{
+  $block-height: 40px;
+
+  padding-top: $block-height;
+  padding-bottom: $block-height + 50px;
+  text-align:center;
+  background-color:#f6f6f6;
+  h1{
+    // @include responsive-slctr(font-size, 3.0em, 3.0em, 2.6em, 2.6em, 2.4em);
+    //font-family: 'idealist_sans-webfont';
+  }
+  p{
+    // @include responsive-slctr(font-size, 2.0em, 2.0em, 1.6em, 1.6em, 1.4em);
+    //font-family: 'idealist_sans_light-webfont';
+    margin-bottom: 40px;
+  }
+  @include media-breakpoint-up(sm){
+    h1{ margin-bottom: 25px;}
+  }
+
+
+    .member{
+        .avatar .img-circle{
+            background-color:#dbdbdb;
+            -webkit-transition: -webkit-transform 0.2s ease;
+            -moz-transition: -moz-transform 0.2s ease;
+            transition: transform 0.2s ease;
+        }
+        .avatar .img-circle:hover {
+            //-webkit-transform: scale(1.1);
+            background-color:$blue;
+            -webkit-transform: scale(1.1);
+            -moz-transform: scale(1.1);
+            -o-transform: scale(1.1);
+            transform: scale(1.1);
+        }
+
+        .personal-contact-links{
+            text-align:center;
+            li{
+                display: inline-block;
+                *display:inline; /*IE7*/
+                *zoom:1; /*IE7*/
+                margin-right:10px;
+            }
+        }
+      }
+
+
+}

@@ -1,0 +1,12 @@
+/////////////////
+// BK Imgs
+////////////////
+
+@mixin background-img-cover($img-url, $height: inherit) {
+  background-image:url($img-url);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: $height;
+}

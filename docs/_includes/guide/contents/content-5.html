@@ -1,0 +1,59 @@
+{% assign slab_no = "5" %}
+{% assign slab_type = "content" %}
+{% capture slab_name %}{{ slab_type }}-{{ slab_no }}{% endcapture %}
+<!-- START HEADER {{slab_no}} -->
+<!-- Trigger docs modal -->
+<button class="read-docs" data-toggle="modal" data-target="#{{slab_name}}">
+  ?
+</button>
+
+<section class="{{slab_name}} bkg-clouds">
+  <div class='container'>
+    <div class='row content-wrapper'>
+      <div class='col-md-6 content'>
+        <h3>More than blocks</h3>
+        <p class='text-asbestos'>
+          Slabs Framework helps you to build visual consistency around your pages. Bring balance and visual consistency in a snap to you UI.
+        </p>
+        <p class='text-asbestos'>
+          Don't start from scratch. Using Slabs Framework will help you get a perfect look that designers and developers will agree on.
+        </p>
+        <p>
+          <a href="{{ site.baseurl }}/getting-started" class="btn btn-concrete btn-lg">Getting started</a>
+        </p>
+      </div>
+      <div class='col-md-6 media'>
+        <img src="{{ site.baseurl }}/assets/img/ordered-stuff.jpg" class='img-responsive'>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Modal -->
+<div class="modal modal-wide fade modal-docs" id="{{slab_name}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title text-upcase">{{slab_name}}</h4>
+      </div>
+      <div class="modal-body">
+        <h2>
+          HTML:
+        </h2>
+        <p>
+          Simply copy and paste the following lines of code into yout HTML file
+        </p>
+
+        {% highlight html %} {% include {{ slab_name | prepend: 'components/contents/' | append: '.html'}}  %} {% endhighlight %}
+
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- END HEADER {{slab_no}} -->
+{% assign slab_no = null %}
+{% assign slab_type = null %}
+{% assign slab_name = null %}
+<div class="docs-spacer"> </div>

@@ -1,0 +1,70 @@
+{% assign slab_no = "10" %}
+{% assign slab_type = "content" %}
+{% capture slab_name %}{{ slab_type }}-{{ slab_no }}{% endcapture %}
+<!-- START {{slab_type}} {{slab_no}} -->
+<!-- Trigger docs modal -->
+<button class="read-docs" data-toggle="modal" data-target="#{{slab_name}}">
+  ?
+</button>
+<section class="{{slab_name}} text-black">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 vcenter">
+        <div class="media">
+        <iframe width="400" height="280" src="//www.youtube.com/embed/0LJ_yZh93oU?rel=0&showinfo=0&controls=0" frameborder="0" allowfullscreen></iframe>
+      </div>
+      </div>
+      <div class="col-sm-6 vcenter text-center">
+        <h1>
+          Don't fight to build it
+        </h1>
+        <p class="lead">
+          Just pick your slabs that will help you create the perfect look for your webpage and whip it good!
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Modal -->
+<div class="modal modal-wide fade modal-docs" id="{{slab_name}}" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">{{slab_name | upcase}}</h4>
+      </div>
+      <div class="modal-body">
+        <h2>
+          HTML:
+        </h2>
+        <p class="lead">
+          Simply copy and paste the following lines of code into yout HTML file
+        </p>
+        {% highlight html %} {% include {{ slab_name | prepend: 'components/contents/' | append: '.html'}}  %} {% endhighlight %}
+        <h2>Customize this block:</h2>
+
+        <p>Remember to mantain the same HTML Structure so the design don't break.</p>
+        <p>Adding an image or video it's super simple, just insert it between this class:</p>
+        {% highlight html %}
+<div class="media">
+  ...
+</div>
+        {% endhighlight %}
+        <p class="lead">You can customize the background color and text color.</p>
+        {% highlight html %}
+<section class="{{slab_name}} bkg-black text-white">
+  ...
+</section>
+        {% endhighlight %}
+
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- END {{slab_type}} {{slab_no}} -->
+{% assign slab_no = null %}
+{% assign slab_type = null %}
+{% assign slab_name = null %}
+<div class="docs-spacer"> </div>

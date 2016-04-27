@@ -1,0 +1,25 @@
+@include generate-btn($socialColorList);
+@include generate-btn($colorList);
+
+.btn.btn-outline{
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.btn.btn-rounded{
+  border-radius: 15px;
+}
+
+.btn.btn-xlg{
+  padding:8px 15px;
+  font-size:1.6em;
+}
+
+.btn.btn-xxlg{
+  padding:10px 35px;
+  font-size:1.8em;
+}
+
+.btn.btn-xxxlg{
+  padding:10px 50px;
+  font-size:2em;
+}

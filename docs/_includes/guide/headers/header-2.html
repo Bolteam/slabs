@@ -1,0 +1,74 @@
+{% assign slab_no = "2" %}
+{% assign slab_type = "header" %}
+{% capture slab_name %}{{ slab_type }}-{{ slab_no }}{% endcapture %}
+<!-- START {{slab_type}} {{slab_no}} -->
+<!-- Trigger docs modal -->
+<button class="read-docs" data-toggle="modal" data-target="#{{slab_name}}">
+  ?
+</button>
+<header class="{{slab_name}}">
+  <div class="item" style="background-image: url('{{ site.baseurl }}/assets/img/bg_2.jpg');">
+    <div class="container">
+      <div class="jumbotron text-center">
+        <h1>
+          Slabs Framework
+        </h1>
+        <p>
+          We've created the set of components
+          <br/>
+          for your next website
+        <p>
+      </div>
+    </div>
+  </div>
+  <div class="item" style="background-image: url('{{ site.baseurl }}/assets/img/bg_4.jpg');">
+    <div class="container">
+      <div class="jumbotron text-left text-silver">
+        <h1>
+          Simple, Fast and Responsive
+        </h1>
+        <p>
+          Create amazing websites
+        <p>
+      </div>
+    </div>
+  </div>
+  <div class="item" style="background-image: url('{{ site.baseurl }}/assets/img/bg_3.jpg');">
+    <div class="container">
+      <div class="jumbotron">
+        <h1>
+          Multiple set of componentes
+        </h1>
+        <p>
+          Everything you should need for your website
+        <p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Modal -->
+<div class="modal modal-wide fade modal-docs" id="{{slab_name}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title text-upcase">{{slab_name}}</h4>
+      </div>
+      <div class="modal-body">
+        <h2>
+          HTML:
+        </h2>
+        <p>
+          Simply copy and paste the following lines of code into yout HTML file
+        </p>
+        {% highlight html %} {% include {{ slab_name | prepend: 'components/headers/' | append: '.html'}}  %} {% endhighlight %}
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END {{slab_type}} {{slab_no}} -->
+{% assign slab_no = null %}
+{% assign slab_type = null %}
+{% assign slab_name = null %}
+<div class="docs-spacer"> </div>

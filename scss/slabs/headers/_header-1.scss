@@ -1,0 +1,97 @@
+/* HEADER NAVBAR */
+$nav-h: 60px;
+$header-no: 1;
+
+.header-#{$header-no}{
+  .navbar{
+    $border-height: 2px;
+    margin-bottom:0px;
+    height: $nav-h + $border-height;
+    border: 0px;
+    border-radius: 0px;
+
+
+    .navbar-brand  {
+      font-size: 24px;
+      line-height: 30px;
+    }
+    .navbar-brand {
+      @include media-breakpoint-down(sm) {
+        padding-right: 0px;
+        padding-left: 0px;
+      }
+      color: $white;
+    }
+
+    .navbar-header{
+      height: $nav-h;
+    }
+
+  }
+  .navbar-nav > li > a {
+    @include media-breakpoint-down(sm) {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: $white;
+    font-size: 16px;
+    &:hover{
+      color: $silver;
+    }
+  }
+  .navbar, .navbar-default .navbar-collapse {
+    background-color: $midnight-blue;
+    color: $white;
+    z-index: 1;
+  }
+}
+
+/* SUBHEADER CONTENT */
+.subheader-#{$header-no}{
+  $block-height: 130px;
+  position:relative;
+
+  padding-top: $block-height;
+  padding-bottom: $block-height;
+
+  height: 610px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+
+  color: $white;
+
+  .background{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    padding-top: $block-height;
+    padding-bottom: $block-height;
+  }
+  .jumbotron{
+    text-align: center;
+    @include media-breakpoint-down(sm) {
+      h1{ margin-bottom: 25px;}
+    }
+    background-color: transparent;
+
+    @include media-breakpoint-up(md) {
+      h1 { font-size: 3.5em }
+      p  { font-size: 2.0em }
+    }
+
+    @include media-breakpoint-down(md) {
+      h1 { font-size: 3.0em }
+      p  { font-size: 1.6em }
+    }
+
+    @include media-breakpoint-down(sm) {
+      h1 { font-size: 2.6em }
+      p  { font-size: 1.4em }
+    }
+  }
+}

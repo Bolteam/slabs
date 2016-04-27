@@ -1,0 +1,61 @@
+{% assign slab_no = "4" %}
+{% assign slab_type = "content" %}
+{% capture slab_name %}{{ slab_type }}-{{ slab_no }}{% endcapture %}
+<!-- START HEADER {{slab_no}} -->
+<!-- Trigger docs modal -->
+<button class="read-docs" data-toggle="modal" data-target="#{{slab_name}}">
+  ?
+</button>
+
+<section class="{{slab_name}}">
+  <div class='container'>
+    <h1>
+      Multi useful components
+    </h1>
+    <h2>
+      Show the world your slabs combination
+    </h2>
+    <div class='row content-wrapper'>
+      <div class='col-md-3 content'>
+        <h3>Responsive Layout</h3>
+        <p>All the components will work in any device. Try it now! Resize your screen.</p>
+      </div>
+      <div class='col-md-6 media'>
+        <img src="{{ site.baseurl }}/assets/img/content4-showcase.png">
+      </div>
+      <div class='col-md-3 content'>
+        <h3>Endless Variations</h3>
+        <p>Just mix any slab you want to start building your next website. The limit is your imagination.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Modal -->
+<div class="modal modal-wide fade modal-docs" id="{{slab_name}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title text-upcase">{{slab_name}}</h4>
+      </div>
+      <div class="modal-body">
+        <h2>
+          HTML:
+        </h2>
+        <p>
+          Simply copy and paste the following lines of code into yout HTML file
+        </p>
+
+        {% highlight html %} {% include {{ slab_name | prepend: 'components/contents/' | append: '.html'}}  %} {% endhighlight %}
+
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- END HEADER {{slab_no}} -->
+{% assign slab_no = null %}
+{% assign slab_type = null %}
+{% assign slab_name = null %}
+<div class="docs-spacer"> </div>
