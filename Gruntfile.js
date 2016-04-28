@@ -160,6 +160,12 @@ module.exports = function(grunt) {
           }
         ]
       }
+    },
+    'gh-pages': {
+      options: {
+        base: '_gh_pages'
+      },
+      src: ['**/*']
     }
 
   });

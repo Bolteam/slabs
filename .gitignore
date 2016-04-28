@@ -5,6 +5,7 @@ _site
 *.zip
 
 # Folders to ignore
+.grunt/
 node_modules
 bower_components
 **/.sass-cache
