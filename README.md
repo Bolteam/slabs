@@ -7,11 +7,11 @@ Slabs Framework is an amazing extension for [Bootstrap](http://github.com/twbs/b
 
 Three quick start options are available:
 
-Read the [Getting started page](http://boltech.github.io/Slabs/getting-started/) for information on the framework contents, examples and more.
+Read the [Getting started page](http://boltech.github.io/slabs/getting-started/) for information on the framework contents, examples and more.
 
 ## Documentation
 
-Slabs's documentation is build using [Jekyll](http://jekyllrb.com/) and hosted on Github pages at [http://boltech.github.io/Slabs/](http://boltech.github.io/Slabs/). You should be able to run them locally.
+Slabs's documentation is build using [Jekyll](http://jekyllrb.com/) and hosted on Github pages at [http://boltech.github.io/slabs/](http://boltech.github.io/slabs/). You should be able to run them locally.
 
 
 ### Running documentation locally
