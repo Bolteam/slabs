@@ -34,7 +34,7 @@
 </header>
 <section class="sub{{slab_name}}" id="docs-sub{{slab_name}}">
 
-  <div class="background bkg-silver"></div>
+  <div class="background bkg-silver" style="background-image: url('{{site.baseurl}}/assets/img/bg_1.jpg');"></div>
   <div>
     <div class="container">
       <div class="jumbotron">
@@ -71,7 +71,7 @@
           This block have a special place to add a background image. We recommend to add it by CSS rules for this particular element.
         </p>
         {% highlight html %}
-<div class='background' style='background-image: url("../img/bg_1.jpg");'>
+<div class='background' style='background-image: url("{{site.baseurl}}/img/bg_1.jpg");'>
 ...
 </div>
         {% endhighlight %}

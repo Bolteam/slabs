@@ -10,7 +10,8 @@ source:  docs
 destination:  _gh_pages
 host: 0.0.0.0
 port: 9001
-url: http://localhost:9001
+url: http://boltech.github.io/slabs/
+baseurl: /slabs
 encoding: UTF-8
 
 gems:

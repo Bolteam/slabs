@@ -9,32 +9,32 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a href="../" class="navbar-brand">
-          <img src="../assets/brand/slabs-logo-white.png" class='img-responsive'>
+        <a href="{{site.baseurl}}/" class="navbar-brand">
+          <img src="{{site.baseurl}}/assets/brand/slabs-logo-white.png" class='img-responsive'>
         </a>
       </div>
       <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
         <ul class="nav navbar-nav">
           <li{% if page.slug == "starting" %} class="active"{% endif %}>
-            <a href="../getting-started">Getting started</a>
+            <a href="{{site.baseurl}}/getting-started">Getting started</a>
           </li>
         </ul>
 
         <ul class="nav navbar-nav navbar-right">
           <li{% if page.slug == "css" %} class="active"{% endif %}>
-            <a href="../css">CSS</a>
+            <a href="{{site.baseurl}}/css">CSS</a>
           </li>
           <li{% if page.slug == "headers" %} class="active"{% endif %}>
-            <a href="../headers">Headers</a>
+            <a href="{{site.baseurl}}/headers">Headers</a>
           </li>
           <li{% if page.slug == "contents" %} class="active"{% endif %}>
-            <a href="../contents">Contents</a>
+            <a href="{{site.baseurl}}/contents">Contents</a>
           </li>
           <li{% if page.slug == "footers" %} class="active"{% endif %}>
-            <a href="../footers">Footers</a>
+            <a href="{{site.baseurl}}/footers">Footers</a>
           </li>
           <li{% if page.slug == "people" %} class="active"{% endif %}>
-            <a href="../people">People</a>
+            <a href="{{site.baseurl}}/people">People</a>
           </li>
         </ul>
 
