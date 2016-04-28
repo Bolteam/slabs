@@ -1,7 +1,7 @@
 Slabs
 =======
 
-Slabs is an amazing extension for [Bootstrap](http://github.com/twbs/bootstrap), ready to help developers to create amazing websites in minutes.
+Slabs Framework is an amazing extension for [Bootstrap](http://github.com/twbs/bootstrap), ready to help developers to create amazing websites in minutes.
 
 ## Quick start
 
