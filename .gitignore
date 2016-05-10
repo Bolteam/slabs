@@ -12,3 +12,6 @@ bower_components
 **/.sass-cache/
 deploy
 design
+
+# Ignore Apple DS
+*.DS_Store
