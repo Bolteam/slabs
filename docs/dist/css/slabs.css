@@ -2195,10 +2195,10 @@ h1, h2, h3, h4, h5, h6,
     min-height: 180px;
   }
 }
-.content-12 .container {
+.content-12 .container, .content-12 .container-fluid {
   height: 100%;
 }
-.content-12 .container > .row {
+.content-12 .container > .row, .content-12 .container-fluid > .row {
   height: 100%;
 }
 @media (max-width: 766px) {
