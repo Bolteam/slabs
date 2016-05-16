@@ -17,7 +17,6 @@
 }
 
 #docs-subheader-1 .background {
-  background-image: url("{{site.baseurl}}/img/bg_1.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -32,7 +31,6 @@
 }
 
 #docs-content-9 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("{{site.baseurl}}/img/bg_106.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
