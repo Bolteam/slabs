@@ -87,22 +87,3 @@
     }
   }
 }
-
-// @mixin responsive-slctr ($slctr, $default, $sld, $sd, $st, $sm){
-//     @include media-breakpoint-up(lg) {
-//         #{$slctr}: $sld;
-//     }
-//     @include desktop {
-//         #{$slctr}: $sd;
-//     }
-//     @include media-breakpoint-down(md) {
-//         #{$slctr}: $st;
-//     }
-//     @include media-breakpoint-down(sm) {
-//         #{$slctr}: $sm;
-//     }
-//     @include default {
-//         #{$slctr}: $default;
-//     }
-//     #{$slctr}: $default;
-// }
