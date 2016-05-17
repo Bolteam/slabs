@@ -43,6 +43,8 @@ What is npm? Keep calm and install node. NPM stands for [node packaged modules](
 #### Build - `grunt`
 Run `grunt` to run tests locally and compile the CSS and JavaScript into `/dist`.
 
+## Using Rails?
+Integrate Slabs into your project with our gem maintain by [Jorge Najera](https://twitter.com/Jorge_Najera). Check out the [Gem](https://github.com/Boltech/slabs-rails).
 
 ## Credits
 
