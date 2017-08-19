@@ -1,17 +1,24 @@
 # Ignore docs files
 _gh_pages
-_site
+
+# Ignore ruby files
 .ruby-version
+.bundle
+vendor/cache
+vendor/bundle
+
+# Numerous always-ignore extensions
+*.log
+*.orig
 *.zip
 
-# Folders to ignore
-.grunt/
-node_modules
-bower_components
-**/.sass-cache
-**/.sass-cache/
-deploy
-design
+# OS or Editor folders
+._*
+.cache
+.DS_Store
 
-# Ignore Apple DS
-*.DS_Store
+# grunt-contrib-sass cache
+.sass-cache
+
+# Folders to ignore
+node_modules
