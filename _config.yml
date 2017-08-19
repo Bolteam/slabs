@@ -14,7 +14,7 @@ url: http://bolteam.github.io/slabs/
 baseurl: /slabs
 encoding: UTF-8
 
-gems:
+plugins:
   - jekyll-sitemap
 
 # Custom vars
