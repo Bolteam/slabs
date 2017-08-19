@@ -1,6 +1,6 @@
 /*!
- * Slabs v1.0.0 (https://github.com/Boltech/slabs)
- * Copyright 2016-2016 Boltech
+ * Slabs v1.0.0 (https://github.com/Bolteam/slabs)
+ * Copyright 2016-2016 Bolteam
  * Licensed under the  license
  */
 window.slabs = {
@@ -505,7 +505,7 @@ License: https://github.com/ashleydw/lightbox/blob/master/LICENSE
 $(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
     event.preventDefault();
     $(this).ekkoLightbox();
-}); 
+});
 
 /*
      _ _      _       _

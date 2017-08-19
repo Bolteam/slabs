@@ -10,7 +10,7 @@ source:  docs
 destination:  _gh_pages
 host: 0.0.0.0
 port: 9001
-url: http://boltech.github.io/slabs/
+url: http://bolteam.github.io/slabs/
 baseurl: /slabs
 encoding: UTF-8
 
@@ -19,8 +19,8 @@ gems:
 
 # Custom vars
 current_version: 1.0.0
-repo: https://github.com/Boltech/slabs
+repo: https://github.com/Bolteam/slabs
 
 download:
-  source:  https://github.com/Boltech/slabs/archive/v1.0.0.zip
-  dist:    https://github.com/Boltech/slabs/releases/download/v1.0.0/slabs-1.0.0-dist.zip
+  source:  https://github.com/Bolteam/slabs/archive/v1.0.0.zip
+  dist:    https://github.com/Bolteam/slabs/releases/download/v1.0.0/slabs-1.0.0-dist.zip

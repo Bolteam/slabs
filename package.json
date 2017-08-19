@@ -5,18 +5,18 @@
     "keywords": [
     "slabs",
     "css",
-    "boltech",
+    "bolteam",
     "mobile-first",
     "responsive",
     "front-end",
     "framework",
     "web"
   ],
-  "homepage": "https://github.com/Boltech/slabs",
-  "author": "Boltech",
+  "homepage": "https://github.com/Bolteam/slabs",
+  "author": "Bolteam",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Boltech/slabs"
+    "url": "https://github.com/Bolteam/slabs"
   },
   "devDependencies": {
     "grunt": "~0.4.4",
@@ -34,7 +34,7 @@
     "grunt-jekyll": "~0.4.4"
   },
   "bugs": {
-    "url": "https://github.com/Boltech/slabs/issues"
+    "url": "https://github.com/Bolteam/slabs/issues"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
